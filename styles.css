@@ -1,0 +1,31 @@
+.background {
+  background: linear-gradient(180deg, #87CEEB 0%, #FFFFFF 100%);
+  animation: skyAnimation 20s linear infinite;
+}
+
+@keyframes skyAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+.sunflower {
+  position: absolute;
+  bottom: -10%;
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.shooting-star {
+  position: absolute;
+  top: 20%;
+  animation: shootingStarAnimation 1s ease-in-out forwards;
+}
+
+@keyframes shootingStarAnimation {
+  0% { transform: translateX(0) translateY(0); opacity: 1; }
+  100% { transform: translateX(100vw) translateY(-100vh); opacity: 0; }
+}
